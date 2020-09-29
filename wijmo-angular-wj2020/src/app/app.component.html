@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <wj-flex-grid
+      #grid
+      [autoSearch]="true"
+      [isReadOnly]="true"
+      [selectionMode]="'CellRange'"
+      [(itemsSource)]="data">
+      <wj-flex-grid-column [binding]="'name'" [header]="'列'" [width]="'2*'"></wj-flex-grid-column>
+  </wj-flex-grid>
+  <button (click)="clickButton()">[]の配列を代入するボタン</button>
+</div>
